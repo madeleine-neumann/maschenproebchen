@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maschenproben Rechner</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="canonical" href="https://madeleine-neumann-9e.github.io/raglan-from-top-calculator/" />
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mb-4">Maschenproben Rechner</h1>
+    <form action="" onsubmit="calculateGauge(event)">
+      <div class="row mb-4">
+        <div class="form-group col-md-6 mb-4 mb-4">
+          <label>Wie breit war deine Maschenprobe? </label>
+          <input type="text" data-js-id="widthInCM" class="form-control" placeholder="in cm" required>
+        </div>
+        <div class="form-group col-md-6 mb-4">
+          <label>Wie hoch war deine Maschenprobe?</label>
+          <input type="text" data-js-id="heightInCM" class="form-control" placeholder="in cm" required>
+        </div>
+        <div class="form-group col-md-6 mb-4">
+          <label>Wie viele Maschen breit?</label>
+          <input type="text" data-js-id="numberStiches" class="form-control" placeholder="in Maschen" required>
+        </div>
+        <div class="form-group col-md-6 mb-4">
+          <label>Wie viele Reihen hoch?</label>
+          <input type="text" data-js-id="rows" class="form-control" placeholder="in Reihen" required>
+        </div>
+        <div class="form-group col-md-6 mb-4">
+          <label>Wie breit soll dein Strickstück werden?</label>
+          <input type="text" data-js-id="expecteWidthInCM" class="form-control" placeholder="in cm" required>
+        </div>
+        <div class="form-group col-md-6 mb-4">
+          <label>Wie hoch soll dein Strickstück werden?</label>
+          <input type="text" data-js-id="expecteHeightInCM" class="form-control" placeholder="in cm" required>
+        </div>
+      </div>
+
+      <div data-js-id="result">
+      </div>
+      <div class="row mb-4">
+        <input type="submit" value="Berechnen" class="btn btn-success col-md-4">
+      </div>
+    </form>
+
+
+    <div data-js-id="result">
+    </div>
+  </div>
+  <script src="../js/calculateGauge.js"></script>
+</body>
+</html>
